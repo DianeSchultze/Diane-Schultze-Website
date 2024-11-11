@@ -128,8 +128,6 @@ footer{
     box-shadow: 0px 0px 200px #494850 ;
     flex-wrap: wrap;
     position:static
-
-   
 }
 .intro-text {
     display: flex;
@@ -144,8 +142,6 @@ footer{
     font-family: "Lexend Deca", sans-serif;
     font-size: 300%;
     font-weight: 900;
-    
-
 }
 .intro-text p {
     color: #FAE8ED;
@@ -155,4 +151,43 @@ footer{
     line-height: 2em;
     text-align: center
 
+}
+@media only screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;  /* Stack image and text vertically */
+        padding: 30px;
+    }
+
+    .intro-image {
+        max-width: 100%;
+        margin-bottom: 20px; /* Add spacing between image and text */
+    }
+
+    .intro-text h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .intro {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .intro-image {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem; /* Make the title smaller on very small screens */
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
 }
