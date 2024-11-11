@@ -7,14 +7,24 @@ body {
     font-family: "Lexend Deca", sans-serif; /* Default font for the website */
     background-color: #2C2C34
 }
+/* Color Palette 
+#FAE8ED - Lightest Pink
+#FDD5DF - Next Shade
+#FFC2D1 - Next Shade
+#FFB2C5 - Next Shade
+#FFA2B9 - Darkest Pink
 
-.navbar { /* Navigation panel start */
+#978897 - Lightest Gray
+#494850 - Middle Gray
+#2C2C34 - Darkest Gray */
+
+.navbar { /* Navigation panel start & The rectangle*/
     background-color: #494850;
     padding: 15px 20px;
     margin: 0%;
     box-shadow: 0 2px 5px #000000 
 }
-.navbar ul {
+.navbar ul { /* Unordered List style */
     list-style: none;
     display: flex;
     justify-content: space-around; /* Center the navigation panel while maintaining distance */
@@ -23,7 +33,7 @@ body {
     overflow: hidden;
 }
 .navbar li a {
-    color: #FDD5DF;
+    color: #FDD5DF; /* Navigation Panel Texts */
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -33,12 +43,46 @@ body {
     color: #FFA2B8 /* Change color while hovering */
 }
 
-h1 {
+/* Text Elements */
+h1 { 
     color: #ffffff;
     font-family: "Lexend Deca", sans-serif;
     font-size: 400%;
     font-weight: 900;
     text-align: center;
     text-shadow: 0 0 7px #ffc2d1;
+    text-transform: none;
+}
+h2 {
+    color: #FFB2C5;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 300%;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 5px #FFB2C5;
+
+}
+h3 {
+    color: #FFC2D1;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
 }
 
+h4 {
+    color: #FDD5DF ;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 130%;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
+}
+
+p {
+    color: #FAE8ED ;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 110%;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
+}
