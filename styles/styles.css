@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Font Name: Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    font-family: "Lexend Deca", sans-serif; /* Default font for the website */
+    background-color: #2C2C34
+}
+
+.navbar { /* Navigation panel start */
+    background-color: #494850;
+    padding: 15px 20px;
+    margin: 0%;
+    box-shadow: 0 2px 5px #000000 
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Center the navigation panel while maintaining distance */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar li a {
+    color: #FDD5DF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.navbar li a:hover {
+    color: #FFA2B8 /* Change color while hovering */
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 400%;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 0 7px #ffc2d1;
+}
+
