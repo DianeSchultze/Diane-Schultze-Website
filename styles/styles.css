@@ -1,3 +1,4 @@
+
 /* styles.css */
 
 /* Font Name: Lexend Deca */
@@ -18,29 +19,33 @@ body {
 #494850 - Middle Gray
 #2C2C34 - Darkest Gray */
 
-.navbar { /* Navigation panel start & The rectangle*/
+/* Navigation panel start & The rectangle*/
+.navbar { 
     background-color: #494850;
     padding: 15px 20px;
     margin: 0%;
     box-shadow: 0 2px 5px #000000 
 }
-.navbar ul { /* Unordered List style */
+/* Unordered List style */
+.navbar ul { 
     list-style: none;
     display: flex;
-    justify-content: space-around; /* Center the navigation panel while maintaining distance */
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+/* Navigation Panel Texts */
 .navbar li a {
-    color: #FDD5DF; /* Navigation Panel Texts */
+    color: #FDD5DF; 
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
 }
+/* Change color while hovering */
 .navbar li a:hover {
-    color: #FFA2B8 /* Change color while hovering */
+    color: #FFA2B8 
 }
 
 /* Text Elements */
@@ -59,7 +64,7 @@ h2 {
     font-size: 300%;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 0 5px #FFB2C5;
+    text-shadow: 0px 0px 16px #8f7070;
 
 }
 h3 {
@@ -68,7 +73,7 @@ h3 {
     font-size: 200%;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 0 4px #000000;
+    text-shadow: 0 0 7px #000000;
 }
 
 h4 {
@@ -76,7 +81,7 @@ h4 {
     font-family: "Lexend Deca", sans-serif;
     font-size: 130%;
     text-align: center;
-    text-shadow: 0 0 4px #000000;
+    text-shadow: 0 0 7px #000000;
 }
 
 p {
@@ -84,5 +89,70 @@ p {
     font-family: "Lexend Deca", sans-serif;
     font-size: 110%;
     text-align: center;
+    text-shadow: 0px 0px 7px #000000;
+}
+footer{
+    background-color: #494850;
+    color: #FAE8ED;
+    padding: 0.1%;
+    text-align: center;
     text-shadow: 0 0 4px #000000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px #000000 
+}
+
+
+/* Introduction Home Page */
+#Welcome {
+    text-align: center;
+    font-size: 400%;
+    color: #ffffff;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+.intro-image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 15%;
+    box-shadow: 0px 0px 200px #494850 ;
+    flex-wrap: wrap;
+    position:static
+
+   
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+.intro-text h2 {
+    color: #FFB2C5;
+    height: auto;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 300%;
+    font-weight: 900;
+    
+
+}
+.intro-text p {
+    color: #FAE8ED;
+    font-family: "Lexend Deca", sans-serif;
+    margin-right: 0%;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center
+
 }
