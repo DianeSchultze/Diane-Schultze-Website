@@ -20,7 +20,7 @@ body {
 .navbar ul { 
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -34,7 +34,9 @@ body {
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
+    text-align: center;
 }
+
 /* Change color while hovering */
 .navbar a:hover {
     color: #FFA2B8;
@@ -149,6 +151,7 @@ ul {
 footer {
     display: flex;
     background-color: #494850;
+    justify-content: center;
     color: #FAE8ED;
     font-size: xx-small;
     padding: 0.1%;
@@ -208,45 +211,7 @@ footer {
     text-align: center
 
 }
-@media only screen and (max-width: 768px) {
-    .intro {
-        flex-direction: column;  /* Stack image and text vertically */
-        padding: 30px;
-    }
 
-    .intro-image {
-        max-width: 100%;
-        margin-bottom: 10px; /* Add spacing between image and text */
-    }
-
-    .intro-text h2 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
-
-    .intro-text p {
-        font-size: 1rem;
-    }
-}
-@media only screen and (max-width: 480px) {
-    .intro {
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .intro-image {
-        max-width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .intro-text h2 {
-        font-size: 2rem; /* Make the title smaller on very small screens */
-    }
-
-    .intro-text p {
-        font-size: 0.9rem;
-        line-height: 1.5em;
-    }
-}
 
 /* About Page Header */
 
@@ -316,17 +281,17 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     max-width: 100%;
     max-height: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .Social a {
-    max-width: fit-content;
-    max-height: fit-content;
+    max-width: 50%;
+    max-height: 50%;
     border: 0px solid ;
-    border-radius: 14px;
+    border-radius: 60px;
     padding: 20px 70px;
     background-color: #222228;
     color: #FFC2D1; /* Link color */
@@ -402,6 +367,43 @@ header {
     color:  #9eddff;
     text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;  /* Stack image and text vertically */
+        padding: 30px;
+    }
 
+    .intro-image {
+        max-width: 100%;
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
 
+    .intro-text h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .intro {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .intro-image {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem; /* Make the title smaller on very small screens */
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+}
 
