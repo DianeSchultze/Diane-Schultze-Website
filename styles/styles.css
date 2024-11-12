@@ -3,23 +3,13 @@
 
 /* Font Name: Lexend Deca */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* Reset default margin and padding */
 
 body {
     font-family: "Lexend Deca", sans-serif; /* Default font for the website */
-    background-color: #2C2C34
+    background-color: #2C2C34;
+    min-height: 100vh;
 }
-/* Color Palette 
-#FAE8ED - Lightest Pink
-#FDD5DF - Next Shade
-#FFC2D1 - Next Shade
-#FFB2C5 - Next Shade
-#FFA2B9 - Darkest Pink
-
-#978897 - Lightest Gray
-#494850 - Middle Gray
-#2C2C34 - Darkest Gray */
-
-/* Navigation panel start & The rectangle*/
 .navbar { 
     background-color: #494850;
     padding: 15px 20px;
@@ -35,6 +25,7 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
 /* Navigation Panel Texts */
 .navbar li a {
     color: #FDD5DF; 
@@ -44,8 +35,8 @@ body {
     transition: color 0.3s ease;
 }
 /* Change color while hovering */
-.navbar li a:hover {
-    color: #FFA2B8 
+.navbar a:hover {
+    color: #FFA2B8;
 }
 
 
@@ -69,15 +60,36 @@ h2 {
     text-shadow: 0px 0px 16px #8f7070;
 
 }
+
+/* Style the h3  a element */
 h3 {
-    color: #FFC2D1;
-    font-family: "Lexend Deca", sans-serif;
     font-size: 200%;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 700;
-    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
     text-shadow: 0 0 7px #000000;
+    text-align: center;
 }
 
+/* Style links within h3 */
+h3 a {
+    border: 0px solid ;
+    border-radius: 14px;
+    padding: 9px;
+    background-color: #222228;
+    color: #FFC2D1; /* Link color */
+    text-decoration: none; 
+    font-weight: bold;
+    transition: ease 0.3s;
+}
+
+/* Hover effect for links within h3 */
+h3 a:hover {
+    color: #fcc3dc;
+    background-color: #ef6eac;
+    text-decoration: none;
+}
 h4 {
     color: #FDD5DF ;
     font-family: "Lexend Deca", sans-serif;
@@ -93,40 +105,26 @@ p {
     text-align: center;
     text-shadow: 0px 0px 7px #000000;
 }
-footer {
-    background-color: #494850;
-    display: flex;
-    color: #FAE8ED;
-    font-size: xx-small;
-    padding: 0.1%;
-    text-align: center;
-    text-shadow: 0 0 4px #000000;
-    position: relative;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
-    box-shadow: 0 2px 5px #000000     
-}
+
 hr {
     border: none;
     height: 0%;
     background-color: #ffffff;
 }
+
 /* Table Section */
 table {
     display: flex;
-    background-color: none;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 tr {
     max-width: 100px ;    
     border-collapse: collapse;
     text-align: center;
-    background-color: none;
 }
-
 
 th, td {
     color: #2C2C34;
@@ -134,19 +132,30 @@ th, td {
     max-width: fit-content;
     font-size: 20px;
     text-shadow: 0px 0px 1px #000000;
-   
 }
-
+/* Unordered List */
 ul {
     color: #ffffff;
     text-align: center;
-    text-shadow: 0px 0px 10px #030001;
-    font-size: 1em;
+    text-shadow: 0px 0px 5px #030001;
+    font-size: 1.1em;
     font-weight: 300;
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+footer {
+    background-color: #494850;
+    color: #FAE8ED;
+    font-size: xx-small;
+    padding: 0.1%;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
+    position: static;
+    bottom: 0%;
+    width: 100%;
+    box-shadow: 0 2px 5px #000000     
 }
 
 /* Introduction Home Page */
@@ -155,12 +164,12 @@ ul {
     font-size: 400%;
     color: #ffffff;
     font-family: "Lexend Deca", sans-serif;
-    
 }
+
 .intro {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px;
     max-width: 1200px;
     margin: auto;
@@ -172,7 +181,7 @@ ul {
     border-radius: 15%;
     box-shadow: 0px 0px 200px #494850 ;
     flex-wrap: wrap;
-    position:static
+    position: relative
 }
 .intro-text {
     display: flex;
@@ -204,8 +213,8 @@ ul {
     }
 
     .intro-image {
-        max-width: 90%;
-        margin-bottom: 20px; /* Add spacing between image and text */
+        max-width: 100%;
+        margin-bottom: 10px; /* Add spacing between image and text */
     }
 
     .intro-text h2 {
@@ -223,7 +232,7 @@ ul {
     }
 
     .intro-image {
-        max-width: 90%;
+        max-width: 100%;
         margin-bottom: 15px;
     }
 
@@ -237,7 +246,7 @@ ul {
     }
 }
 
-/* About Page */
+/* About Page Header */
 
 
 header {
@@ -247,7 +256,6 @@ header {
     background-color: #fff0f5;        
     box-shadow: 0px 5px 20px #000000;
     background-color: #FDD5DF;
-
 }
 
 .HeaderImage {
@@ -278,6 +286,7 @@ header {
     padding-bottom: 2%;
     box-shadow: 0px 5px 20px #000000;
 }
+
 #Facts {
     border: 1px solid #efcfd4;
     border-radius: 40px ;
@@ -286,38 +295,25 @@ header {
     box-shadow: 0px 5px 20px #000000;
 }
 
-/* Style the h3 element */
-h3 {
-    font-size: 2em;
-    color: #ffffff; /* Dark gray */
-    margin-bottom: 10px;
+.AceCat {
+    max-width: 40%;
+    max-height: 40%;
+    box-shadow: 0px 0px 15px #46032dda;
+    border-radius: 90px;
+    transition: transform 0.3s;
 }
 
-/* Style links within h3 */
-h3 a {
-    border: 0px solid ;
-    border-radius: 14px;
-    padding: 9px;
-    background-color: #222228;
-    color: #FFC2D1; /* Link color */
-    text-decoration: none; 
-    font-weight: bold;
-    transition: ease 0.3s;
+.AceCat:hover {
+    transform: scale(1.8);
 }
 
-/* Hover effect for links within h3 */
-h3 a:hover {
-    color: #fcc3dc;
-    background-color: #ef6eac;
-    text-decoration: none;
-}
+/* Contact Page */
 
 .Social {
     display: flex;
     justify-content: space-evenly;
     max-width: 100%;
     max-height: 100%;
-
 }
 
 .Social a {
@@ -325,7 +321,7 @@ h3 a:hover {
     max-height: fit-content;
     border: 0px solid ;
     border-radius: 14px;
-    padding: 9px;
+    padding: 10px;
     background-color: #222228;
     color: #FFC2D1; /* Link color */
     text-decoration: none; 
@@ -337,21 +333,13 @@ h3 a:hover {
     color: #fcc3dc;
     background-color: #ef6eac;
     text-decoration: none;
-    
 }
 
-.AceCat {
-    max-width: 40%;
-    max-height: 40%;
-    box-shadow: 0px 0px 15px #46032dda;
-    border-radius: 90px;
-}
-
+/* Buttons to download works */
 #Production ul li {
     display: flex;
     justify-content: center;
     padding: 8px;
-
 }
 
 #Production ul li a {
@@ -361,17 +349,18 @@ h3 a:hover {
     border-radius: 14px;
     padding: 9px;
     background-color: #222228;
-    color: #FFC2D1; /* Link color */
+    color: #FFC2D1;
     text-decoration: none; 
     font-weight: bold;
     transition: ease 0.3s;
-
 }
+
 #Production ul li a:hover {
     color:  #fcc3dc;
     background-color: #ef6eac;
     text-decoration: none;
 }
+
 #Portfolio ul li {
     display: flex;
     justify-content: center;
@@ -394,7 +383,6 @@ h3 a:hover {
     color:  #fcc3dc;
     background-color: #ef6eac;
     text-decoration: none;
-    
 }
 
 #Upcoming a {
@@ -406,7 +394,6 @@ h3 a:hover {
 #Upcoming a:hover {
     color:  #9eddff;
     text-decoration: none;
-    
 }
 
 
