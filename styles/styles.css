@@ -3,7 +3,7 @@
 
 /* Font Name: Lexend Deca */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-/* Reset default margin and padding */
+
 
 body {
     font-family: "Lexend Deca", sans-serif; /* Default font for the website */
@@ -96,19 +96,19 @@ h3 a:hover {
     text-decoration: none;
 }
 h4 {
-    color: #FDD5DF ;
+    color: #ffffff ;
     font-family: "Lexend Deca", sans-serif;
     font-size: 2.6vw;
     text-align: center;
-    text-shadow: 0 0 7px #000000;
+    text-shadow: 0px 0px 5px #000000
 }
 
 p {
-    color: #FAE8ED ;
+    color: #ffffff ;
     font-family: "Lexend Deca", sans-serif;
     font-size: 2.1vw;
     text-align: center;
-    text-shadow: 0px 0px 7px #000000;
+    text-shadow: 0px 0px 5px #000000;
     margin-left: 4vw;
     margin-right: 4vw;
 }
@@ -134,11 +134,11 @@ tr {
 }
 
 th, td {
-    color: #2C2C34;
+    color: #ffffff;
     padding: 15px;
     max-width: fit-content;
     font-size: 2.1vw;
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 1px 1px #555256;
 }
 /* Unordered List */
 ul {
@@ -270,7 +270,7 @@ header {
 .AceCat {
     max-width: 40%;
     max-height: 40%;
-    box-shadow: 0px 0px 15px #46032dda;
+    box-shadow: 0px 0px 15px #000000da;
     border-radius: 90px;
     transition: transform 0.3s;
 }
@@ -280,6 +280,9 @@ header {
 }
 
 /* Contact Page */
+#H1Connect {
+    font-size: 8vw;
+}
 
 .Social {
     display: flex;
@@ -289,9 +292,6 @@ header {
     gap: 50px;
     max-height: 100vh;
     
-}
-#H1Connect {
-    font-size: 8vw;
 }
 
 .Social a {
@@ -314,7 +314,7 @@ header {
     text-decoration: none;
 }
 
-/* Buttons to download works */
+/* Links to download works */
 #Production ul li {
     display: flex;
     justify-content: center;
@@ -353,7 +353,7 @@ header {
     border-radius: 14px;
     padding: 14px;
     background-color: #222228;
-    color: #FFC2D1; /* Link color */
+    color: #FFC2D1;
     text-decoration: none; 
     font-weight: bold;
     transition: ease 0.3s;
