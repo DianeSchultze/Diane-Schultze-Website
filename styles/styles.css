@@ -151,7 +151,7 @@ ul {
     padding: 0;
     overflow: hidden;
 }
-footer {
+#DianeFooter {
     display: flex;
     background-color: #494850;
     justify-content: center;
@@ -162,7 +162,7 @@ footer {
     width: 100vw;
     box-shadow: 0 2px 5px #000000;
 }
-footer p {
+#DianeFooter p {
     color: #FAE8ED;
     text-align: center;
     text-shadow: 0 0 4px #000000;
@@ -172,9 +172,10 @@ footer p {
 /* Introduction Home Page */
 #Welcome {
     text-align: center;
-    font-size: 8vw;
+    font-size: 7.9vw;
     color: #ffffff;
     font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 2%;
 }
 
 .intro {
@@ -424,5 +425,32 @@ header {
     }
 }
 
-  
+  /* Background color changes */
+body.morning { 
+    color: #fa9475;
+    text-shadow: 0px 0px 5px #fa9475;
+}
+
+body.afternoon { 
+    color: #fba3de;
+    text-shadow: 0px 0px 5px #fba3de;
+ }
+
+
+body.evening { 
+    color: #daa3ff;
+    text-shadow: 0px 0px 5px #daa3ff; 
+}
+
+/* Greeting styles */
+.Greeting  {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 5vw;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: -6% ;
+    margin-top: 2%;
+   
+}
+
   
