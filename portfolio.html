@@ -44,6 +44,31 @@
             <h3>Upcoming Projects</h3>
             <p>Stay tuned for exciting upcoming projects that I’m working on! For more updates and to explore my work, feel free to visit my <a href="https://github.com/DianeSchultze">GitHub profile</a>
         </section>
+        <div>
+            <ol id="numbers"></ol>
+            <script>
+                
+                const orderedList = document.getElementById('numbers');
+        
+                // Use a for loop to create 12 <li> elements
+                for (let i = 1; i <= 12; i++) {
+                    // Create a new <li> element
+                    const listItem = document.createElement('li');
+                    
+                    // Set the text content based on whether the index is even or odd
+                    if (i % 2 === 0) {
+                        listItem.textContent = `Even`;
+                        listItem.classList.add('even');
+                    } else {
+                        listItem.textContent = `Odd`;
+                        listItem.classList.add('odd');
+                    }
+        
+                    // Append the <li> element to the ordered list
+                    orderedList.appendChild(listItem);
+                }
+            </script>
+        </div>
     </main>
     <hr>
     <footer id="DianeFooter">

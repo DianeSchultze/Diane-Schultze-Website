@@ -425,7 +425,7 @@ header {
     }
 }
 
-  /* Background color changes */
+  /* text shadow color changes */
 body.morning { 
     color: #fa9475;
     text-shadow: 0px 0px 5px #fa9475;
@@ -487,4 +487,27 @@ body.evening {
     transform: scale(0.95);    /* shrink the button */
 }
 
-  
+/* Style for the ordered list */
+#numbers {
+    text-align: center;
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 18px;
+    
+}
+
+/* Style for even list items */
+#numbers .even {
+    color: rgb(170, 226, 250);
+    font-weight: 800;
+    text-shadow: none;
+}
+
+/* Style for odd list items */
+#numbers .odd {
+    color: rgb(203, 153, 247);
+    font-weight: 800;
+    font-style: oblique;
+    text-shadow: none;
+}
