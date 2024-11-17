@@ -489,11 +489,10 @@ body.evening {
 
 /* Style for the ordered list */
 #numbers {
-    text-align: center;
     list-style-type: decimal;
     padding-left: 20px;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 18px;
+    font-size: 2vw;
     
 }
 
