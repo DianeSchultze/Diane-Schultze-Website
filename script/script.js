@@ -1,31 +1,22 @@
 console.log("JavaScript file successfully linked!");
 
-// Target the footer element by ID
+// footer element by ID - ALL PAGES
 const footer = document.getElementById('DianeFooter');
 
-// Ensure the footer exists before trying to modify it
 if (footer) {
-    // Get the current year dynamically
     const today = new Date();
     const currentYear = today.getFullYear();
 
-    // Update the footer content
+    // Update footer content
     footer.innerHTML = `<p>&copy; ${currentYear} Diane Schultze</p>`;
 
-    // Log today's full date to the developer console
     console.log(`Today's full date is: ${today.toDateString()}`);
 }
 
-// Get the <body> element
+// Greeting - Home Page
 const bodyElement = document.body;
-
-// Get the <div> with the class "Greeting"
 const greetingDiv = document.querySelector('.Greeting');
-
-// Get the current hour
 const currentHour = new Date().getHours();
-
-// Create a greeting message and assign a class
 let greetingMessage = ""; // Initialize an empty greeting
 
 if (currentHour < 12) {
@@ -49,4 +40,21 @@ if (greetingDiv) {
 } else {
     console.warn("Greeting <div> not found!");
 }
+
+// Button - Portfolio Page
+const alertButton = document.getElementById("buttonks");
+
+alertButton.addEventListener("click", function () {
+    alert("Click Me");
+});
+
+// mouse over
+alertButton.addEventListener("mouseover", function () {
+    alertButton.innerText = "⬆⬆⬆";
+});
+
+// mouse out
+alertButton.addEventListener("mouseout", function () {
+    alertButton.innerText = "⬆ Works ⬆";
+});
 

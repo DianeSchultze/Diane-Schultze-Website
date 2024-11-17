@@ -453,4 +453,38 @@ body.evening {
    
 }
 
+/* Button alignment */
+#ButtonSEC {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: -1%;
+}
+
+/* Base styles for the button */
+.pretty-button {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f79aba; 
+    color: white;           
+    border: none;           
+    padding: 1.5vw 3vw;       
+    font-size: 2vw;          
+    border-radius: 8px;       
+    transition: transform 0.2s, background-color 0.5s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.pretty-button:hover {
+    background-color: #380f25;
+    transform: scale(1.6);    /* enlarge the button */
+}
+
+/* (on click) */
+.pretty-button:active {
+    background-color: #ff0077; 
+    transform: scale(0.95);    /* shrink the button */
+}
+
   
