@@ -37,15 +37,13 @@ if (currentHour < 12) {
 if (greetingDiv) {
     // Update the text content of the <div>
     greetingDiv.textContent = greetingMessage;
-} else {
-    console.warn("Greeting <div> not found!");
 }
 
 // Button - Portfolio Page
 const alertButton = document.getElementById("buttonks");
 
 alertButton.addEventListener("click", function () {
-    alert("Click Me");
+    alert("Click OK and Check My Works");
 });
 
 // mouse over
@@ -57,4 +55,7 @@ alertButton.addEventListener("mouseover", function () {
 alertButton.addEventListener("mouseout", function () {
     alertButton.innerText = "⬆ Works ⬆";
 });
+
+
+
 
